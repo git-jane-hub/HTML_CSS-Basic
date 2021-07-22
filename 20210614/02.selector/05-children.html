@@ -1,0 +1,27 @@
+<!-- 자식 선택자는 부모 태그 > 자식 태그 방식으로 작성,
+    단, > 선택자의 경우는 맞닿아 있는 관계(부모-자식)가 아니라면
+    설령 특정 태그의 하위에 지목된 태그가 있어도 적용되지 않음 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Children selector - 자식 선택자</title>
+    <style>
+      li > p {
+        /* 두 개 이상의 계층도 지정이 가능 - ul > li > p */
+        /* ul > p 는 부모 - 자식 관계가 아니기 때문에 적용되지 않음 */
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>확정 여행지 목록</h1>
+    <ul>
+      <li><p>7월: 부산</p></li>
+      <li><p>8월: 제주</p></li>
+    </ul>
+    <p>* 9월: 울릉도 - 미정</p>
+  </body>
+</html>

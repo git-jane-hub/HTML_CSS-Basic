@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin</title>
+    <style>
+      /* margin 값도 padding과 마찬가지로 동일한 로직으로 1, 2, 4개로 줄 수 있음 */
+      /* p 태그에 각각 margin을 50px씩 값을 줬기 때문에, p 태그 상하 간격은 100px이 차이나야하지만,
+         margin-collapsing(마진상쇄_마진이 겹치면서 상쇄가 일어남, 블록요소에서만) 일어나면서 50px 차이가 남
+         - 두개 이상의 블록요소가 겹칠 때, 어느 한쪽의 값(다르다면 더 큰 값)만 적용하는 브라우저의 규칙 */
+      body {
+        background-color: thistle;
+      }
+      p {
+        background-color: sandybrown;
+        width: 500px;
+        border: 1px solid black;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>오늘의 날씨</p>
+    <p>오늘은 매우 덥습니다.</p>
+    <p>오늘은 비가 안옵니다.</p>
+    <p class="tom">내일의 날씨는 어떨까?</p>
+  </body>
+</html>

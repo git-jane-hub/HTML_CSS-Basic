@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font - 폰트 적용</title>
+    <style>
+      /* font:기본크기 "글꼴명", 영문글꼴 */
+      body {
+        font: 12px "굴림", Gulim;
+      }
+      /* font 관련 설정은 좀 더 상세하게 나눌 수 있음 */
+      h1 {
+        font-family: "명조", serif; /*서체*/
+        font-size: 50px; /*크기*/
+        font-weight: 800; /*두께*/
+        font-style: italic; /*스타일*/
+        color: violet; /*색상*/
+      }
+      /* 위의 항목들을 하나의 속성으로 처리할 수 있음 */
+      p {
+        /* font: 두께 스타일 크기 서체 순으로 작성 */
+        font: bold italic 15px Gulim;
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2021년 6월 10일 개강</h1>
+    <p>ICT 산업융합을 위한 응용 소프트웨어 SW</p>
+  </body>
+</html>

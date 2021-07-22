@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disabled</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>모의 글쓰기 창</legend>
+      <form>
+        <label for="writer">글쓴이: </label>
+        <input id="writer" type="text" value="abc" readonly />
+        <!-- readonly: 해당 값을 수정하지 못하게 함_많이 사용함 -->
+        <br />
+        <br />
+        <label for="title">제목: </label>
+        <input id="title" type="text" placeholder="제목을 입력하세요" />
+        <br />
+        <br />
+        <label for="content">본문: </label>
+        <textarea
+          id="content"
+          cols="30"
+          rows="10"
+          placeholder="본문을 입력하세요"
+        ></textarea>
+        <br />
+        <br />
+        <input type="submit" value="제출" />
+        <input type="reset" value="초기화" />
+      </form>
+    </fieldset>
+  </body>
+</html>

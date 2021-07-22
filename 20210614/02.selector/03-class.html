@@ -1,0 +1,42 @@
+<!-- class 선택자는 두개 이상으로 작성해도 됨 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 클래스 선택자는 .클래스명 {css 요소명}을 사용
+    아이디는 #, 클래스는 .을 이용해서 작성 */
+      #title--big {
+        color: white;
+        background-color: royalblue;
+      }
+      #contents {
+        background-color: thistle;
+      }
+      .title {
+        color: brown;
+      }
+      .item {
+        color: navy;
+      }
+    </style>
+    <title>Class selector - 클래스 선택자</title>
+  </head>
+  <body>
+    <div id="title--big">
+      <h1>css 선택자</h1>
+    </div>
+    <div id="contents">
+      <p class="title">현재까지 익힌 내용</p>
+      <p class="item">1. type 선택자</p>
+      <p class="item">2. id 선택자</p>
+      <p class="item">3. class 선택자</p>
+      <hr />
+      <p class="title">앞으로 익힐 내용</p>
+      <p class="item">4. 자식 선택자</p>
+      <p class="item">5. 기타 등등...</p>
+    </div>
+  </body>
+</html>

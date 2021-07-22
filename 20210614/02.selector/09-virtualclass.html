@@ -1,0 +1,46 @@
+<!-- 현재에는 적용되어 있지 않지만 추후에 적용할 것 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual class - 의사 선택자</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      /* 마우스가 올라가는 순간 적용되는 변화 */
+      a:hover {
+        color: royalblue;
+      }
+      /* 마우스가 클릭되는 순간 적용되는 변화 */
+      a:active {
+        color: salmon;
+      }
+      /* 방문한 적 없는 홈페이지의 a 태그에 적용됨 */
+      a:link {
+        color: springgreen;
+      }
+      /* 방문 기록이 있는 홈페이지의 a 태그에 적용됨 */
+      a:visited {
+        color: tomato;
+      }
+      /* active는 다른 태그에도 적용됨 */
+      h1:active,
+      h1:hover {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>한국ICT인재개발원</h1>
+    <ul>
+      <!-- a 태그에는 마우스를 올리면 커서가 손가락 모양으로 바뀌고, 
+           홈페이지를 방문하고 새로고침하면 파란색에서 보라색으로 변경됨 -->
+      <li><a href="https://amazon.com">회사소개</a></li>
+      <li><a href="https://apple.com">강의소개</a></li>
+      <li><a href="https://facebook.com">문의하기</a></li>
+    </ul>
+  </body>
+</html>

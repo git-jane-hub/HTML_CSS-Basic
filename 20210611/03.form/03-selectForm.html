@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select form - 셀렉트 요소</title>
+  </head>
+  <body>
+    <h1>셀렉트 만들기</h1>
+    <filedset>
+      <!-- 여기 한번 확인해야됨_legend에 제목라인이 없어짐 -->
+      <legend>선택항목들</legend>
+      <p>
+        과목선택
+        <select name="choice" id="">
+          <option value="study">HTML5</option>
+          <option value="study">CSS</option>
+          <option value="study">JavaScript</option>
+          <option value="study">Jquery</option>
+        </select>
+      </p>
+      <p>
+        수강지역선택
+        <select>
+          <!-- optgroup에 label을 작성해서 각 선택지의 상위 그룹을 만들어줌 -->
+          <optgroup label="마포구">
+            <option value="">서교동</option>
+            <option value="">동교동</option>
+            <option value="">합정동</option>
+          </optgroup>
+          <optgroup label="동대문구">
+            <option value="">전농동</option>
+            <option value="">이문동</option>
+            <option value="">회기동</option>
+            <option value="">휘경동</option>
+          </optgroup>
+        </select>
+      </p>
+    </filedset>
+  </body>
+</html>

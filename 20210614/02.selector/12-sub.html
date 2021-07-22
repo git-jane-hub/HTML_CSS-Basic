@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sub</title>
+    <style>
+      /* 하위 선택자는 해당 태그의 하위 요소이기만 하면 선택이 되는 선택자임
+         기존의 > 선택자는 반드시 부모 - 자식관계에서 적용되어야하지만,
+         하위 선택자는 부모 - 자식 뿐만아니라 해당 태그의 자손이여도 적용됨
+         그리고 중간의 일부 계층을 생략해도 작동함 */
+      .box a {
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>인강사이트 바로가기</h1>
+    <ul class="box">
+      <li><a href="#">자바 인강</a></li>
+      <li><a href="#">파이썬 인강</a></li>
+      <li><a href="#">CPP 인강</a></li>
+    </ul>
+  </body>
+</html>

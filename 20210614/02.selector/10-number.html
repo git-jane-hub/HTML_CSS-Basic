@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo selector 1 - 가상 셀렉터</title>
+    <style>
+      /* 모든 요소가 끝난 다음에 나오는 내용
+         - 클래스 box에서 다음에 나올 내용은 "항목을 골라주세요." 와 색깔 */
+      .box:after {
+        content: "항목을 골라주세요.";
+        color: green;
+      }
+      /* 각 p 태그에 첫번째 글자의 글꼴 크기를 변경 */
+      p:first-letter {
+        font-size: 300%;
+      }
+      p {
+        border-bottom: 1px dashed tomato;
+      }
+      .box p:last-child {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>회사</p>
+      <p>상품</p>
+      <p>서비스</p>
+    </div>
+  </body>
+</html>

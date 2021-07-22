@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input and form</title>
+  </head>
+  <body>
+    <h1>Input과 요소들</h1>
+    <form>
+      <!-- filedset은 여닫는 부분 사이를 사각형으로 영역을 만들어줌 -->
+      <fieldset>
+        <legend>회원가입</legend>
+        아이디:
+        <input type="text" placeholder="ID" />
+        <br />
+        비밀번호:
+        <input type="password" placeholder="password" />
+        <br />
+        메일 수신여부:
+        <!-- name의 내용이 같으면 같은 그룹으로 묶어서 인식함
+             따라서 name의 내용이 달라지면 복수선택이 가능해짐 -->
+        <input type="radio" name="recieve" />예
+        <input type="radio" name="recieve" />아니오
+        <br />
+        식사여부:
+        <input type="radio" name="eat" />먹음
+        <input type="radio" name="eat" />안먹음
+        <input type="radio" name="eat" />먹는중
+        <br />
+        현재 공부중인 것:
+        <input type="checkbox" name="study" />HTML
+        <input type="checkbox" name="study" />CSS
+        <input type="checkbox" name="study" />JavaScript
+        <br />
+        제출:
+        <input type="submit" value="전송" />
+        <input type="reset" value="초기화" />
+        <input type="button" value="확인" />
+      </fieldset>
+    </form>
+  </body>
+</html>

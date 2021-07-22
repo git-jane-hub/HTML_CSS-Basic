@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Near selector - 인접 형제 선택자</title>
+    <style>
+      /* h1 태그와 인접한 p 태그만 선택 */
+      /* h1 태그와 붙어있는 p 태그에는 모두 적용됨 */
+      /* 해당 선택자는 부모-자식간의 관계에서는 적용할 수 없음 - 형제 태그이기 때문에 */
+      h1 + p {
+        color: royalblue;
+      }
+      /* 인접한 경우라면 다음 태그(.second)외에 이전 태그(.fisrt)도 바뀌는지? - 바뀌지 않음 */
+      body > p:first-child {
+        color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="first">환영합니다.</p>
+    <h1>힌국ICT인재개발원 안내</h1>
+    <p class="second">수업은 9시 30분부터 시작합니다.</p>
+    <p>정규수업에는 18시 20분에는 수업이 종료되지만,</p>
+    <h1>추가 자습실 안내</h1>
+    <p>21시까지 자습할 수 있습니다.</p>
+  </body>
+</html>
