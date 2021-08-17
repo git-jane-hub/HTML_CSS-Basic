@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      /* 부모 > 자식으로 선택하는 경우,
+      아래의 p태그는 li태그 내부에 있을 때, 바로 아래 있는 경우에만 적용받음 */
+      li > p {
+        color: olivedrab;
+      }
+      li > span > p {
+        color: thistle;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <span><p>7월에 갈 여행지: 남해</p></span>
+      </li>
+      <li>
+        <p>8월에 갈 여행지: 제주</p>
+      </li>
+      <li>
+        <p>9월에 갈 여행지: 보성</p>
+      </li>
+    </ul>
+    <p>내년에 갈 여행지: 태국</p>
+  </body>
+</html>
