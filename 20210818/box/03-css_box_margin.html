@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      /*
+    margin: 값;             위아래좌우 모든 적용
+    margin: 값1 값2;        위아래-값1, 좌우-값2
+    margin: 값1 값2 값3;    위-값1, 좌우-값2, 아래-값3
+    margin: 값1 값2 값3 값4;위부터 시계방향
+    margin-top: 값;
+    margin-right: 값;
+    margin-bottom: 값;
+    margin-left: 값;
+    */
+      body {
+        font: 12px "굴림", Gulim;
+        background: url("images/bg_grid.gif");
+      }
+      p {
+        width: 500px;
+        background: #abc;
+        padding: 10px;
+        margin: 20px 0;
+      }
+      /* margin 값에 auto를 작성하면 전체 너비의 가운데 배치 */
+      .cloud {
+        width: 200px;
+        margin: 0 auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <p>오늘은 비가 옵니다.</p>
+    <p>오늘은 눈이 옵니다.</p>
+    <p>오늘은 해가 뜹니다.</p>
+    <p class="cloud">오늘은 흐립니다.</p>
+  </body>
+</html>
