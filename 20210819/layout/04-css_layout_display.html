@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      body {
+        font: 12px "굴림", Gulim;
+        margin: 20px;
+      }
+      /* display는 인라인 태그를 블록 태그로 만들어주거나, 블록 태그를 인라인태그로 만들어주거나
+    혹은 박스자체를 화면에 보이지않게 만들어줌
+    display: block;         박스를 블록속성으로
+    display: inline;        박스를 인라인속성으로
+    display: inline-block;  박스를 인라인속성으로 만들지만 블록요소에서 쓸 수 있는 옵션을 허용(width, height, padding)
+    display: none;          화면에서 표시하지 않음 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      #gnb li {
+        display: inline;
+      }
+      #gnb li a {
+        display: inline-block;
+        background-color: #c00;
+        color: white;
+        width: 100px;
+        height: 23px;
+        padding-top: 10px;
+        text-align: center;
+      }
+      #gnb li a:hover {
+        background-color: #369;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>MENU</h1>
+      <ul id="gnb">
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">COMMUNITY</a></li>
+      </ul>
+      <a href="#" width="300px">a tag</a>
+    </div>
+  </body>
+</html>

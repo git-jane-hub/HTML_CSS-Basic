@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      body {
+        font: 12px "굴림", Gullim;
+        width: 550px;
+      }
+      /* 레이아웃 작성 시에는 header, body, footer 세부분으로 분할
+    header, footer는 한 부분으로 작성하고 body를 2-3분할 (float을 이용) */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        border: 2px dotted red;
+        height: 100px;
+      }
+      #body {
+        border: 2px solid blue;
+        height: 300px;
+        display: flex;
+      }
+      .side-bar {
+        border: 2px solid gray;
+        width: 20%;
+      }
+      .contents {
+        border: 2px solid gray;
+        width: 80%;
+      }
+      #footer {
+        clear: both;
+        border: 2px dashed green;
+        height: 100px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="header">content: header</div>
+    <div id="body">
+      <div class="side-bar">content: side-bar</div>
+      <div class="contents">content: contents</div>
+    </div>
+    <div id="footer">content: footer</div>
+  </body>
+</html>
