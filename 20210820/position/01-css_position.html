@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 12px "굴림", Gulim;
+        margin: 20px;
+        background: url("images/bg_grid.gif") repeat;
+      }
+      #box {
+        width: 550px;
+        border: 1px solid navy;
+        position: relative;
+      }
+      p {
+        width: 130px;
+        height: 80px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      .myred {
+        background-color: salmon;
+      }
+      /* position:absolute 를 작성하면 부모의 position:relative 를 기준으로 위치속성을 적용하여 이동
+        position:relative 정보가 없으면 좌측상단 을 기준으로 이동 */
+      /* z-index 는 높이 정보를 주는 속성 */
+      .myblue {
+        background-color: royalblue;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        z-index: 0;
+      }
+      /* 자기 자신에게 position:relative 를 작성하고 위치속성을 적용하면 자기자신을 기준으로 이동 */
+      .mygreen {
+        background-color: yellowgreen;
+        position: relative;
+        left: 30px;
+        top: 20px;
+        z-index: 1;
+      }
+      /* postion은 블록을 박스의 위치를 기준으로 배치
+      주로 컨텐츠를 겹치게 배열하거나, 덮어씌우는 데에 사용
+      position:static; - 요소를 겹칠 수 없는 상태(default)
+      position:relative; - absolute의 축이 되는 요소
+      position:absolute; - relative의 자식에 작성하면 relative 요소의 위치를 기준으로 잡음
+      position:fixed; - 구형 브라우저에서 사용
+      */
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="box">
+      <p class="myred">박스의 크기와 위치를 잘 살펴봐야합니다.</p>
+      <p class="myblue">박스의 포지션 속성을 바꿔가며 테스트합니다.</p>
+      <p class="mygreen">
+        포지션을 이해하기 위해서는 많은 테스트가 필요합니다.
+      </p>
+    </div>
+  </body>
+</html>

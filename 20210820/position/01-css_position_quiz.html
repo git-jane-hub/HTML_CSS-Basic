@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .layout {
+        border: 3px solid black;
+        width: 600px;
+      }
+      .header,
+      .footer {
+        height: 100px;
+        border: 3px solid thistle;
+      }
+      .main {
+        height: 300px;
+        border: 3px solid teal;
+        position: relative;
+      }
+      .main-side,
+      .main-contents {
+        position: absolute;
+        top: 0;
+        border: 2px solid gray;
+        height: 300px;
+      }
+      .main-side {
+        width: 20%;
+      }
+      .main-contents {
+        left: 120px;
+        width: 80%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">header</div>
+      <div class="main">
+        <div class="main-side">side-bar</div>
+        <div class="main-contents">contents</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
